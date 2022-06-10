@@ -1,3 +1,4 @@
+
 "use strict";
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
@@ -175,3 +176,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ var __webpack_exports__ = (__webpack_exec__("./src/index.js"));
 /******/ }
 ]);
+
+(self.webpackChunkto_do_list=self.webpackChunkto_do_list||[]).push([[179],{138:()=>{document.querySelector(".todo-container").innerHTML=[{description:"wash the utensils",completed:!0,index:0},{description:"complete to do list project",completed:!1,index:1},{description:"attend all meetings",completed:!0,index:2}].map((e=>(({description:e})=>`\n  <ul class="item">\n  <li><i class="material-symbols-outlined">check_box_outline_blank</i></li>\n  <p class="para">${e}</p>\n  <li><i class="material-symbols-outlined">more_vert</i></li>\n  <li><i class="material-symbols-outlined">delete</i></li>\n  </ul>`)(e))).join("")}},e=>{e(e.s=138)}]);
+
