@@ -1,4 +1,5 @@
-import './style.css';
+import './styles.css';
+
 import addElem from './modules/add-elem.js';
 import TaskList from './modules/class-task-list.js';
 import refreshList from './modules/refresh-list.js';
