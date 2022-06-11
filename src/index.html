@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task List</title>
-  <script type="module" src="https://kit.fontawesome.com/035dc923c1.js" crossorigin="anonymous"></script></head>
-<body class="body">
-  <div class="list-container">
-
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+  </head>
+  <body>
+    <header>
+      <a href="#">Gasangwa's Task </a>
+    </header>
+    <main>
+      <div class="container">
+        <h1>
+          Today's To Do
+        </h1>
+        <div class="new-task-ph" id="new-task-ph">
+          <input type="text" id="new-task" placeholder="Add New Task" required>
+          <i class="bi bi-arrow-return-left"></i>
+        </div>
+        <ul class="ul-tasks" id="ul-tasks">        
+        </ul>
+        <button class="btn-clear" type="button">
+          Clear All Completed Task 
+        </button>
+      </div>
+    </main>
+    <footer>
+      Copyright. Gasangwa's work. 2022.
+    </footer>
+  </body>
 </html>
