@@ -1,6 +1,7 @@
 import { compileTaskItem } from './task_UI_Manager.js';
 import { arrTasks, Task, addTask } from './task_DatabaseMS.js';
 import { addIconEvent, addInputDescEvent } from './event_handlers.js';
+import checkChanged from './checked.js';
 
 const newTaskListener = () => {
   const textInput = document.getElementById('new-task');
@@ -15,6 +16,7 @@ const newTaskListener = () => {
       ulTasks.appendChild(compileTaskItem(newTaskAdded));
       addIconEvent(newTaskAdded.index);
       addInputDescEvent(newTaskAdded.index);
+      checkChanged(newTaskAdded.index);
     }
     textInput.value = '';
     textInput.blur();
