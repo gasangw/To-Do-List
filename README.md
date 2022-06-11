@@ -1,28 +1,42 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# To do list project
 
-# To Do List
-
-> "In this project, you will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server."
+To do list project allows users to add, delete or remove complete tasks.
 
 ## Built With
 
-- HTML
-- CSS
-- Use webpack to bundle JavaScript.
+- HTML, CSS & JS
+- Hint, Stylelint, Eslint
 
 ## Getting Started
 
-To get a local clone this repository.
+To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Use any platform with html, css, and JavaScript. To buils this project, I used Visual Studio.
+```
+node and npm
+```
+
+### Setup
+
+```
+- git clone the repo
+- cd into it repo name
+- npm install
+```
+
+### Install
+
+```
+open the html file
+```
 
 ## Authors
 
 👤 **Gasangwa Thomas**
 
-- GitHub: [@gasangw](https://github.com/gasangw)
+- GitHub: [Thomas Gasangwa](https://github.com/gasangw/)
+
 
 ## 🤝 Contributing
 
@@ -33,7 +47,3 @@ Feel free to check the [issues page](https://github.com/gasangw/To-Do-List/issue
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
