@@ -1,6 +1,7 @@
 import { arrTasks } from './task_DatabaseMS.js';
 import { resetTasks } from './reset_functions.js';
 import { addIconEvent, addInputDescEvent } from './event_handlers.js';                                                                           // eslint-disable-line
+import checkChanged from './checked.js';
 
 const compileTaskItem = (task) => {
   // Compiling Task Card
@@ -10,7 +11,7 @@ const compileTaskItem = (task) => {
 
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
-  checkbox.checked = task.selected;
+  checkbox.checked = task.completed;
   checkbox.id = task.index;
 
   const inputDesc = document.createElement('input');
@@ -20,9 +21,13 @@ const compileTaskItem = (task) => {
   inputDesc.className = 'task-desc';
 
   const iCon = document.createElement('i');
-  iCon.classList.add('item-btns', 'bi', 'bi-three-dots-vertical');
+  if (checkbox.checked) {
+    iCon.classList.add('item-btns', 'bi', 'bi-trash3');
+    inputDesc.classList.add('completed');
+  } else {
+    iCon.classList.add('item-btns', 'bi', 'bi-three-dots-vertical');
+  }
   iCon.id = `icon-${task.index}`;
-
   liTask.append(checkbox, inputDesc, iCon);
   return liTask;
 };
@@ -34,6 +39,7 @@ const populateTaskList = () => {
     ulTasks.appendChild(compileTaskItem(arrTasks[i]));
     addIconEvent(arrTasks[i].index);
     addInputDescEvent(arrTasks[i].index);
+    checkChanged(arrTasks[i].index);
   }
 };
 

@@ -1,5 +1,8 @@
 // || =============== Tasks Manager ================== ||
-const arrTasks = JSON.parse(localStorage.getItem('arrTaskLocal')) || [];
+const arrTaskss = JSON.parse(localStorage.getItem('arrTaskLocal')) || [];
+
+let arrTasks = arrTaskss;                                                                                                                                                                                                                                                                                              // eslint-disable-line         
+
 const saveLocal = () => {
   localStorage.setItem('arrTaskLocal', JSON.stringify(arrTasks));
 };
@@ -13,8 +16,8 @@ const addTask = (task) => {
 const updateIndex = () => {
   for (let i = 0; i < arrTasks.length; i += 1) {
     arrTasks[i].index = i + 1;
-    saveLocal();
   }
+  saveLocal();
 };
 
 const delTask = (arrIndex) => {
@@ -22,6 +25,11 @@ const delTask = (arrIndex) => {
   updateIndex();
 };
 
+const clearCompleted = () => {
+  arrTasks = arrTasks.filter((t) => t.completed === false);
+  updateIndex();
+};
+
 export {
-  arrTasks, Task, addTask, delTask, updateIndex, saveLocal,
+  arrTasks, Task, addTask, delTask, updateIndex, saveLocal, clearCompleted,
 };
