@@ -6,16 +6,14 @@ To do list project allows users to add, delete or remove complete tasks.
 
 - HTML, CSS & JS
 - Hint, Stylelint, Eslint
+- Webpack
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-```
-node and npm
-```
+### Live link
+- [My-link](https://gasangw.github.io/To-Do-List/);
 
 ### Setup
 
