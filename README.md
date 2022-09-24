@@ -29,11 +29,13 @@ To get a local copy up and running follow these simple example steps.
 open the html file
 ```
 
-## Authors
+## Author
 
 👤 **Gasangwa Thomas**
 
-- GitHub: [Thomas Gasangwa](https://github.com/gasangw/)
+- GitHub: [@githubhandle](https://github.com/gasangw)
+- Twitter: [@twitterhandle](https://twitter.com/ThomasGasangwa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gasangwa-thomas-84197222a/)
 
 
 ## 🤝 Contributing
